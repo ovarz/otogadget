@@ -5,18 +5,6 @@ function ClosePopup(){
 
 
 
-function CopyURL(text) {
-  var inputc = document.body.appendChild(document.createElement("input"));
-  inputc.value = window.location.href;
-  inputc.focus();
-  inputc.select();
-  document.execCommand('copy');
-  inputc.parentNode.removeChild(inputc);
-  $('.popup-copied').slideDown('fast').delay(2000).slideUp('fast');
-};
-
-
-
 function open_sticky(){
   "use strict";
   $('.open-sticky').click(function(){
