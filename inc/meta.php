@@ -33,12 +33,14 @@
 <meta property="og:image:height" content="1080">
 <meta property="og:description" content="<?php echo $video_desc; ?>" />
 
-<meta name="twitter:image:src" content="https://www.otogadget.id/img/content/content-<?php echo $video_curr; ?>.jpg" />
+<!--
+<meta name="twitter:image:src" content="https://www.otogadget.id/img/content/content-<php echo $video_curr; ?>.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@VIVAcoid" />
-<meta name="twitter:site:id" content="@VIVAcoid" />
-<meta name="twitter:creator" content="@VIVAcoid" />
-<meta name="twitter:description" content="<?php echo $video_desc; ?>" />
+<meta name="twitter:site" content="@OtoGadget" />
+<meta name="twitter:site:id" content="@OtoGadget" />
+<meta name="twitter:creator" content="@OtoGadget" />
+<meta name="twitter:description" content="<php echo $video_desc; ?>" />
+-->
 
 <link rel="preconnect" href="https://www.otogadget.id">
 <link rel="dns-prefetch" href="https://www.otogadget.id" />
@@ -66,4 +68,6 @@ $("body,html").bind("touchstart touchmove scroll mousedown DOMMouseScroll mousew
 <link rel="stylesheet" type="text/css" href="css/rancak.css?<?php echo $anticache; ?>"/>
 </head>
 <body>
-<h1 class="hide"></h1>
+<?php if($video_curr == 0){ ?>
+  <h1 class="hide"><?php echo $video_title; ?></h1>
+<?php } ?>

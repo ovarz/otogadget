@@ -3,12 +3,11 @@
 <?php 
   $video_curr='0'; 
   $video_url='';
-  $video_title='Mobil Keluarga irit Bensin 2022 | Mobil Hemat Bensin untuk keluarga | 7 Mobil Keluarga irit Bensin'; 
-  $video_desc='Kali ini kami mau membahas tentang 7 Mobil yang cocok bagi keluarga. Berikut ini kami jabarkan 7 Mobil yang cocok bagi keluarga dan juga irit bbm yang OG rangkum dari berbagai sumber, Langsung aja tonton videonya.'; 
+  $video_title='Otogadget | Situs yang doyan bahas-bahas ringan seputar otomotif dan gadget'; 
+  $video_desc='Otogadget menyajikan video informasi seputar otomotif dan gadget terkini, test, review, harga, tips, modifikasi, dan komunitas.'; 
   
-  $videotag_array[]=array('videotag_title'=>'mobilkeluarga');
-  $videotag_array[]=array('videotag_title'=>'mobiliritbbm');
-  $videotag_array[]=array('videotag_title'=>'mobilsejutaumat');
+  $videotag_array[]=array('videotag_title'=>'otomotif');
+  $videotag_array[]=array('videotag_title'=>'gadget');
 ?>
 <?php require ($_SERVER['OG'].'inc/meta.php')?>
 <?php require ($_SERVER['OG'].'inc/header.php')?>
