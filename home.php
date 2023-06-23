@@ -1,4 +1,5 @@
 <?php require ('inc/base.php')?>
+<?php require ($_SERVER['OG'].'inc/data.php')?>
 <?php 
   $video_curr='0'; 
   $video_url='';
@@ -9,13 +10,25 @@
   $videotag_array[]=array('videotag_title'=>'gadget');
 ?>
 <?php require ($_SERVER['OG'].'inc/meta.php')?>
-<style>
-  .rancak-container{line-height:0;}
-  .rancak-player-full{position:relative; width:100%; height:100vh;}
-  footer{border-top:0 !important;}
-</style>
+<?php require ($_SERVER['OG'].'inc/header.php')?>
 <div class="rancak-container">
-  <iframe width="560" height="315" class="rancak-player-full" src="https://www.youtube.com/embed/videoseries?list=PLX6nLBE9jIqj7J3zhDsCDl0eC2MWhRed5&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <div class="width-max">
+
+
+
+	<section aria-label="Daftar Video" class="section-container section-video-list">
+  	  <div class="width-max">
+        <?php foreach($video_array as $video_list){ ?>
+		  <?php if($video_list['video_id'] != $video_curr){ ?>
+            <?php require($_SERVER['OG'].'module/video-list.php')?>
+		  <?php } ?>
+        <?php } ?>
+	  </div>
+	</section>
+
+
+
+  </div>
 </div>
 <?php require ($_SERVER['OG'].'inc/footer.php')?>
 <?php require ($_SERVER['OG'].'inc/base-bottom.php')?>

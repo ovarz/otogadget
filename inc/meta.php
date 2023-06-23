@@ -67,7 +67,18 @@ $("body,html").bind("touchstart touchmove scroll mousedown DOMMouseScroll mousew
 
 <link rel="stylesheet" type="text/css" href="css/rancak.css?<?php echo $anticache; ?>"/>
 </head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FRRHFE09BY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FRRHFE09BY');
+</script>
+
 <body>
 <?php if($video_curr == 0){ ?>
   <h1 class="hide"><?php echo $video_title; ?></h1>
+  <h2 class="hide"><?php echo $video_desc; ?></h2>
+  <h3 class="hide">www.youtube.com/@otogadget</h3>
 <?php } ?>
